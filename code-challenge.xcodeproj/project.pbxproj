@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		227D6AE31FBD164E002CACF8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227D6AE21FBD164E002CACF8 /* AppDelegate.swift */; };
-		227D6AE51FBD164E002CACF8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227D6AE41FBD164E002CACF8 /* ViewController.swift */; };
 		227D6AE81FBD164E002CACF8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 227D6AE61FBD164E002CACF8 /* Main.storyboard */; };
 		227D6AEA1FBD164E002CACF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 227D6AE91FBD164E002CACF8 /* Assets.xcassets */; };
 		227D6AED1FBD164E002CACF8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 227D6AEB1FBD164E002CACF8 /* LaunchScreen.storyboard */; };
 		227D6AF81FBD164F002CACF8 /* code_challengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227D6AF71FBD164F002CACF8 /* code_challengeTests.swift */; };
 		227D6B031FBD164F002CACF8 /* code_challengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227D6B021FBD164F002CACF8 /* code_challengeUITests.swift */; };
+		227D6B111FBD1B84002CACF8 /* FlickrViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227D6B101FBD1B84002CACF8 /* FlickrViewController.swift */; };
+		227D6B131FBD1E88002CACF8 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227D6B121FBD1E88002CACF8 /* DataManager.swift */; };
+		227D6B161FBD1F1D002CACF8 /* Globals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227D6B151FBD1F1D002CACF8 /* Globals.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,6 @@
 /* Begin PBXFileReference section */
 		227D6ADF1FBD164E002CACF8 /* code-challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "code-challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		227D6AE21FBD164E002CACF8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		227D6AE41FBD164E002CACF8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		227D6AE71FBD164E002CACF8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		227D6AE91FBD164E002CACF8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		227D6AEC1FBD164E002CACF8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +48,9 @@
 		227D6AFE1FBD164F002CACF8 /* code-challengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "code-challengeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		227D6B021FBD164F002CACF8 /* code_challengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = code_challengeUITests.swift; sourceTree = "<group>"; };
 		227D6B041FBD164F002CACF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		227D6B101FBD1B84002CACF8 /* FlickrViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrViewController.swift; sourceTree = "<group>"; };
+		227D6B121FBD1E88002CACF8 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		227D6B151FBD1F1D002CACF8 /* Globals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Globals.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +101,14 @@
 		227D6AE11FBD164E002CACF8 /* code-challenge */ = {
 			isa = PBXGroup;
 			children = (
+				227D6B141FBD1F10002CACF8 /* Helpers */,
 				227D6AE21FBD164E002CACF8 /* AppDelegate.swift */,
-				227D6AE41FBD164E002CACF8 /* ViewController.swift */,
 				227D6AE61FBD164E002CACF8 /* Main.storyboard */,
 				227D6AE91FBD164E002CACF8 /* Assets.xcassets */,
 				227D6AEB1FBD164E002CACF8 /* LaunchScreen.storyboard */,
 				227D6AEE1FBD164E002CACF8 /* Info.plist */,
+				227D6B101FBD1B84002CACF8 /* FlickrViewController.swift */,
+				227D6B121FBD1E88002CACF8 /* DataManager.swift */,
 			);
 			path = "code-challenge";
 			sourceTree = "<group>";
@@ -123,6 +129,14 @@
 				227D6B041FBD164F002CACF8 /* Info.plist */,
 			);
 			path = "code-challengeUITests";
+			sourceTree = "<group>";
+		};
+		227D6B141FBD1F10002CACF8 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				227D6B151FBD1F1D002CACF8 /* Globals.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +273,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				227D6AE51FBD164E002CACF8 /* ViewController.swift in Sources */,
+				227D6B161FBD1F1D002CACF8 /* Globals.swift in Sources */,
 				227D6AE31FBD164E002CACF8 /* AppDelegate.swift in Sources */,
+				227D6B131FBD1E88002CACF8 /* DataManager.swift in Sources */,
+				227D6B111FBD1B84002CACF8 /* FlickrViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
